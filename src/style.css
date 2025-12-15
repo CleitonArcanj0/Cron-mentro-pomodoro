@@ -1,52 +1,117 @@
 @charset "UTF-8";
 
-body{
-    background-color: rgb(174, 9, 9);
+@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-#principal{
-    max-width: 400px;
-    min-height: 290px;
-    
+body{
+    background-image: linear-gradient(to bottom, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#conteiner-externo{
+    max-width: 500px;
+    height: 500px;
     margin: auto;
+    position: relative;
+    
+
+}
+#conteiner-interno{
+    background-color: #60A4BF ;
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
     padding: 10px;
-    background-color: white;
-    box-shadow: 0px 3px 5px  black;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.473);
+    outline: 1px solid #51c1e4c2;
+}
+.time{    
+    padding: 30px;
+    border-radius: 08px;
+    background-color: #88c8fff5;
+    text-align: center;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.384);
+
 }
 h1{
-    color: rgb(121, 7, 7);
-    text-shadow: 1px 1px 2px  rgba(0, 0, 0, 0.379);
-    font-weight: bolder;
-    font-size: 2.7em;
-    text-align: center;
+    color: aliceblue;
+    font-family: "BBH Hegarty", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 3.9em;
+    margin-bottom: 23px;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.384);
+
 }
-.tempo{
-    margin: 0 auto;
-    font-size: 6em;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+.cronometro{
+    color: #f0e8ec;
+    font-size: 4em;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "BBH Hegarty", sans-serif;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.384);
 }
 .button{
-    top: 20px;
+    margin-top: 14px;
+    height: 60px;    
     width: 100%;
- 
-    position: relative;
-    margin: 10px auto;
     text-align: center;
-   
+    display: inline-block;    
 }
-
 .btn-iteracao{
-    
-    width: 80px;
-    height: 30px;
-    
-    margin: 2px;
+    font-family: "Lexend Deca", sans-serif;
+    font-style: normal;
+    font-size: 14px;
     display: inline-block;
-    
-    border: none;
-    border-radius: 4px;
-    
+    margin: 10px;
+    height: 30px;
+    width: 90px;
+    padding: 7px;
+    line-height: 28px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.39);
+    box-sizing: content-box;
+    border-radius: 5px;
+}
+#start{
+    background-color:rgb(29, 155, 194);
+    color: #ffff;
     font-weight: 600;
-    color: white;
-    background-color: green;
+    text-shadow:  1px 1px 6px rgba(0, 0, 0, 0.521);
+}
+#stop{
+    background-color:rgb(238, 51, 89);
+    color: #ffff;
+    font-weight: 600;
+    text-shadow:  1px 1px 6px rgba(0, 0, 0, 0.521);
+
+}
+#reset{
+    background-color:rgb(216, 213, 42);
+    color: #ffff;
+    font-weight: 600;
+    text-shadow:  1px 1px 6px rgba(0, 0, 0, 0.521);
+
+}
+footer{
+    margin: auto;
+    line-height: 25px;
+}
+footer p{
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.459);
 }
