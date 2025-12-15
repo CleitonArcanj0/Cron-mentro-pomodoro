@@ -25,7 +25,7 @@ body{
 #conteiner-interno{
     background-color: #60A4BF ;
     position: absolute;
-    min-width: 30%;
+    max-width: 500px;
     height: 60%;
     left: 50%;
     top: 50%;
