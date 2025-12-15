@@ -25,7 +25,7 @@ body{
 #conteiner-interno{
     background-color: #60A4BF ;
     position: absolute;
-    width: 80%;
+    min-width: 40%;
     height: 60%;
     left: 50%;
     top: 50%;
@@ -52,7 +52,7 @@ h1{
     font-size: 3.9em;
     margin-bottom: 23px;
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.384);
-
+    
 }
 .cronometro{
     color: #f0e8ec;
@@ -65,12 +65,13 @@ h1{
 .button{
     margin-top: 14px;
     height: 60px;    
-    width: 100%;
+    min-width: 400px;
     text-align: center;
     display: inline-block;    
 }
 .btn-iteracao{
     font-family: "Lexend Deca", sans-serif;
+ 
     font-style: normal;
     font-size: 14px;
     display: inline-block;
