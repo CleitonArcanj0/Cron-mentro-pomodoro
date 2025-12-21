@@ -11,17 +11,18 @@
         <div id="conteiner-interno">
             <div class="time">
                 <h1>Pomodoro </h1>
-                <div id="tempo" class="cronometro">25:00</div>
+                <div id="tempo" class="cronometro"><span id="minutos">25</span>:<span id="segundos">00</span></div>
             </div>
             <div class="button">
-                <div id="start" class="btn-iteracao">Iniciar</div>
-                <div id="stop" class="btn-iteracao">Parar</div>
-                <div id="reset" class="btn-iteracao">Resetar</div>
+                <div id="start" class="btn-iteracao" onclick="start()">Iniciar</div>
+                <div id="stop" class="btn-iteracao" onclick="parar()">Parar</div>
+                <div id="reset" class="btn-iteracao" onclick="resetar()">Resetar</div>
             </div>
         </div>
     </div>
     <footer>
         <p>Desenvolvido por Cleiton Arcanjo</p>
     </footer>
+    <script src="src/main.js"></script>
 </body>
 </html>
