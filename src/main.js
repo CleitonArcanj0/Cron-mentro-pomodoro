@@ -7,10 +7,8 @@ function start() {
     let segundos = 59;
 
     tempo = setInterval(function () {
-
         campoMin.innerText = `${minutos.toString().padStart(2, "0")}`
         campoSeg.innerText = `${segundos.toString().padStart(2, "0")}`
-
         if (segundos !== 0) {
             segundos--;
         } else {

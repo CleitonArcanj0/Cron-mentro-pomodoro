@@ -90,20 +90,22 @@ h1{
     color: #ffff;
     font-weight: 600;
     text-shadow:  1px 1px 6px rgba(0, 0, 0, 0.521);
+    transform: 500ms linear;
 }
+
 #stop{
     background-color:rgb(238, 51, 89);
     color: #ffff;
     font-weight: 600;
     text-shadow:  1px 1px 6px rgba(0, 0, 0, 0.521);
-
+    
 }
 #reset{
     background-color:rgb(216, 213, 42);
     color: #ffff;
     font-weight: 600;
     text-shadow:  1px 1px 6px rgba(0, 0, 0, 0.521);
-
+    
 }
 footer{
     margin: auto;
@@ -116,4 +118,16 @@ footer p{
     font-size: 15px;
     text-align: center;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.459);
+}
+#start:active{
+    transform: scale(95%);
+    opacity: 0.6;
+}
+#reset:active{
+    transform: scale(95%);
+    opacity: 0.6;
+}
+#stop:active{
+    transform: scale(95%);
+    opacity: 0.6;
 }
