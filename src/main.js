@@ -1,18 +1,22 @@
 const campoMin = window.document.getElementById("minutos");
 const campoSeg = window.document.getElementById("segundos");
-
+let tempo;
 
 function start() {
     let minutos = 24;
     let segundos = 59;
 
+    //impede que o usuário crie vários intervalos
+    if(tempo){
+        return;
+    }
     tempo = setInterval(function () {
         campoMin.innerText = `${minutos.toString().padStart(2, "0")}`
         campoSeg.innerText = `${segundos.toString().padStart(2, "0")}`
         if (segundos !== 0) {
             segundos--;
         } else {
-            if (minutos === 0 && segundos === 0) {
+            if (minutos === 0) {
                 alert("Acabou o tempo!");
                 resetar()
             } else {
@@ -31,5 +35,6 @@ function parar() {
 function resetar() {
     campoMin.innerText = "25"
     campoSeg.innerText = "00"
+    tempo = null;
     parar()
 }
