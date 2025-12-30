@@ -85,6 +85,9 @@ h1{
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.39);
     border-radius: 5px;
 }
+.btn-iteracao:hover{
+    cursor: pointer;
+}
 #start{
     background-color:rgb(29, 155, 194);
     color: #ffff;
