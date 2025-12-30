@@ -11,6 +11,7 @@ const start = () => {
         minutos = 24
         segundos = 59
         qtd_start_ativado++
+        
     } else if (qtd_start_ativado > 0 && rodando === false) {
         rodando = true
         minutos = Number(window.document.getElementById("minutos").innerHTML)

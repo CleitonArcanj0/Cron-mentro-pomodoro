@@ -16,7 +16,7 @@ body{
 }
 #conteiner-externo{
     max-width: 500px;
-    min-height: 500px;
+    min-height: 463px;
     margin: auto;
     position: relative;
     
@@ -25,8 +25,8 @@ body{
 #conteiner-interno{
     background-color: #60A4BF ;
     position: absolute;
-    max-width: 374px;
-    height: 60%;
+    min-width: 370px;
+    min-height: 60%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -50,7 +50,7 @@ h1{
     font-family: "BBH Hegarty", sans-serif;
     font-weight: 200;
     font-style: normal;
-    font-size: 3.9em;
+    font-size: 3.1em;
     margin-bottom: 23px;
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.384);
     
@@ -58,14 +58,14 @@ h1{
 .cronometro{
     max-width: 100%;
     color: #f0e8ec;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 400;
     font-style: normal;
     font-family: "BBH Hegarty", sans-serif;
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.384);
 }
 .button{
-    margin-top: 14px;
+    margin-top: 5px;
     height: 60px;    
     min-width: 100%;
     text-align: center;
