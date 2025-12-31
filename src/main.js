@@ -1,17 +1,28 @@
 const campoMin = window.document.getElementById("minutos");
 const campoSeg = window.document.getElementById("segundos");
 let tempo
-let minutos 
+let minutos
 let segundos
 let rodando = false
+
+/*
+     A flag qtd_start_ativado: 
+    -> Flag que indica se o cronômetro já foi iniciado ao menos uma vez.
+    -> É incrementada no primeiro clique em "start".
+    -> Ao pausar e retomar, permite verificar se já houve inicialização
+       e recuperar do HTML o tempo exato em que a contagem foi interrompida.
+
+
+*/
 let qtd_start_ativado = 0
+
 
 const start = () => {
     if (qtd_start_ativado === 0) {
         minutos = 24
         segundos = 59
         qtd_start_ativado++
-        
+
     } else if (qtd_start_ativado > 0 && rodando === false) {
         rodando = true
         minutos = Number(window.document.getElementById("minutos").innerHTML)
