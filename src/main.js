@@ -4,18 +4,14 @@ let tempo
 let minutos
 let segundos
 let rodando = false
-
 /*
      A flag qtd_start_ativado: 
     -> Flag que indica se o cronômetro já foi iniciado ao menos uma vez.
     -> É incrementada no primeiro clique em "start".
     -> Ao pausar e retomar, permite verificar se já houve inicialização
        e recuperar do HTML o tempo exato em que a contagem foi interrompida.
-
-
 */
 let qtd_start_ativado = 0
-
 
 const start = () => {
     if (qtd_start_ativado === 0) {

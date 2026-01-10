@@ -4,58 +4,66 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-image: linear-gradient(to bottom, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
     background-repeat: repeat;
     min-height: 100vh;
 }
-#conteiner-externo{
-    max-width: 500px;
-    min-height: 463px;
-    margin: auto;
-    position: relative;
+
+#conteiner-externo {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     
 
-}
-#conteiner-interno{
-    background-color: #60A4BF ;
-    position: absolute;
-    min-width: 370px;
-    min-height: 60%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 
+}
+
+#conteiner-interno {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #60A4BF;
+    min-width: 370px;
+    min-height: 260px;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.473);
     outline: 1px solid #51c1e4c2;
 }
-.time{    
+
+.time {
+    flex-basis: auto;
     padding: 30px;
     border-radius: 08px;
-    background-color: #88c8fff5;
     text-align: center;
-    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.384);
 
+    background-color: #88c8fff5;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.384);
 }
-h1{
+
+h1 {
     max-width: 400px;
     color: aliceblue;
     font-family: "BBH Hegarty", sans-serif;
     font-weight: 200;
     font-style: normal;
     font-size: 3.1em;
-    margin-bottom: 23px;
+    margin-bottom: 19px;
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.384);
-    
+
 }
-.cronometro{
+
+.cronometro {
     max-width: 100%;
     color: #f0e8ec;
     font-size: 3em;
@@ -64,57 +72,67 @@ h1{
     font-family: "BBH Hegarty", sans-serif;
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.384);
 }
-.button{
-    margin-top: 5px;
-    height: 60px;    
+
+.button {
+  
+    height: 60px;
     min-width: 100%;
     text-align: center;
-    display: inline-block;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
 }
-.btn-iteracao{
+
+.btn-iteracao {
     font-family: "Lexend Deca", sans-serif;
- 
+
     font-style: normal;
     font-size: 14px;
-    display: inline-block;
-    margin: 10px;
+
     max-height: 45px;
     min-width: 90px;
     padding: 7px;
     line-height: 28px;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.39);
     border-radius: 5px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.39);
 }
-.btn-iteracao:hover{
+
+.btn-iteracao:hover {
     cursor: pointer;
 }
-#start{
-    background-color:rgb(29, 155, 194);
+
+#start {
+    background-color: rgb(29, 155, 194);
     color: #ffff;
     font-weight: 600;
-    text-shadow:  1px 1px 6px rgba(0, 0, 0, 0.521);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.521);
     transform: 500ms linear;
 }
 
-#stop{
-    background-color:rgb(238, 51, 89);
+#stop {
+    background-color: rgb(238, 51, 89);
     color: #ffff;
     font-weight: 600;
-    text-shadow:  1px 1px 6px rgba(0, 0, 0, 0.521);
-    
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.521);
+
 }
-#reset{
-    background-color:rgb(216, 213, 42);
+
+#reset {
+    background-color: rgb(216, 213, 42);
     color: #ffff;
     font-weight: 600;
-    text-shadow:  1px 1px 6px rgba(0, 0, 0, 0.521);
-    
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.521);
+
 }
-footer{
+
+footer {
     margin: auto;
     line-height: 25px;
 }
-footer p{
+
+footer p {
     color: #ffff;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -122,15 +140,18 @@ footer p{
     text-align: center;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.459);
 }
-#start:active{
+
+#start:active {
     transform: scale(95%);
     opacity: 0.6;
 }
-#reset:active{
+
+#reset:active {
     transform: scale(95%);
     opacity: 0.6;
 }
-#stop:active{
+
+#stop:active {
     transform: scale(95%);
     opacity: 0.6;
 }
